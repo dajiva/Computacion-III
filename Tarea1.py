@@ -41,7 +41,7 @@ def doNewton(tol, maxIter, func):
     points = []
     for i in range(10):
         x0 = rn.randint(-10000,10000)
-        points.append(NewtonMethdod(tol, maxIter, x0, func))
+        points.append(NewtonMethod(tol, maxIter, x0, func))
                       
     xMax = max(points)
     yMax = func.subs(xMax)
